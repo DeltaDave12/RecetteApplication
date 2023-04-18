@@ -12,6 +12,10 @@
         android:layout_width="224dp"
         android:layout_height="46dp"
         android:layout_marginTop="32dp"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:background="@drawable/searchview_style"
+        android:iconifiedByDefault="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,56 +59,55 @@
                 android:id="@+id/scroll_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button1"
                     android:id="@+id/button1"
-                    android:background="#358a32"
-                    android:layout_marginLeft="5dp"/>
-
-                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button2"
+                    android:layout_marginLeft="5dp"
+                    android:background="#358a32"
+                    android:text="Button1" />
+
+                <Button
                     android:id="@+id/button2"
-                    android:background="#0058b6"
-                    android:layout_marginLeft="15dp"/>
-
-                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button3"
+                    android:layout_marginLeft="15dp"
+                    android:background="#0058b6"
+                    android:text="Button2" />
+
+                <Button
                     android:id="@+id/button3"
-                    android:background="#358a32"
-                    android:layout_marginLeft="15dp"/>
-
-                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button4"
+                    android:layout_marginLeft="15dp"
+                    android:background="#358a32"
+                    android:text="Button3" />
+
+                <Button
                     android:id="@+id/button4"
-                    android:background="#0058b6"
-                    android:layout_marginLeft="15dp"/>
-
-                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button5"
+                    android:layout_marginLeft="15dp"
+                    android:background="#0058b6"
+                    android:text="Button4" />
+
+                <Button
                     android:id="@+id/button5"
-                    android:background="#358a32"
-                    android:layout_marginLeft="15dp"/>
-
-                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button6"
+                    android:layout_marginLeft="15dp"
+                    android:background="#358a32"
+                    android:text="Button5" />
+
+                <Button
                     android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
                     android:background="#0058b6"
-                    android:layout_marginLeft="15dp"/>
+                    android:text="Button6" />
 
             </LinearLayout>
         </HorizontalScrollView>
@@ -161,13 +164,14 @@
                     android:orientation="horizontal"
                     android:gravity="center"
                     >
+
                     <Button
+                        android:id="@+id/button7"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:text="Button7"
-                        android:id="@+id/button7"
                         android:background="#0058b6"
-                        />
+                        android:text="Button7" />
+
                     <Button
                         android:layout_width="150dp"
                         android:layout_height="150dp"
