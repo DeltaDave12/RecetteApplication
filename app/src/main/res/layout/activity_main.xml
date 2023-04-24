@@ -14,7 +14,7 @@
         android:layout_marginTop="32dp"
         android:elevation="2dp"
         android:padding="8dp"
-        android:background="@drawable/searchview_style"
+        android:background="@drawable/search_style"
         android:iconifiedByDefault="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -198,8 +198,8 @@
                     <Button
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:text="Button8"
                         android:id="@+id/button8"
+                        android:text="Button8"
                         android:background="#0058b6"
                         android:layout_marginLeft="50dp"/>
                 </LinearLayout>
