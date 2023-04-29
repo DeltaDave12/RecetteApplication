@@ -2,7 +2,9 @@ package com.example.recetteapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -10,6 +12,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.Toast;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +20,21 @@ public class MainActivity extends AppCompatActivity {
     SearchView searchRef;
     ImageView addref;
     ImageView settingsref;
+    Button petitdejButton;
+    Button entreesButton;
+    Button platsButton;
+    Button aperosButton;
+    Button boissonsButton;
+    Button dessertsButton;
+
+    boolean petitdejButtonState = false;
+    boolean entreesButtonState = false;
+    boolean platsButtonState = false;
+    boolean aperosButtonState = false;
+    boolean boissonsButtonState = false;
+    boolean dessertsButtonState = false;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
         settingsref = findViewById(R.id.options);
         searchRef = findViewById(R.id.searchView);
         searchRef.clearFocus();
+        petitdejButton = findViewById(R.id.petitdej);
+        entreesButton = findViewById(R.id.entrees);
+        platsButton = findViewById(R.id.petitdej);
+        aperosButton = findViewById(R.id.petitdej);
+        boissonsButton = findViewById(R.id.petitdej);
+        dessertsButton = findViewById(R.id.petitdej);
+
+
+
+
 
         //onclick buttons
         addref.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +67,24 @@ public class MainActivity extends AppCompatActivity {
             Intent goToOptions = new Intent(MainActivity.this, Options.class);
             startActivity(goToOptions);
         };
-    });
 
+        });
+        // A OPTIMISER (avec fragments ou drawable)
+        // Onclick pour les boutons du header de la page home
+        petitdejButton.setOnClickListener(new View.OnClickListener() {
 
+            public void onClick(View v) {
+                if(petitdejButtonState == true){
+                    petitdejButton.setBackgroundResource(R.drawable.sort_button_top_home);
+
+                    petitdejButtonState = false;
+                } else {
+                    petitdejButton.setBackgroundResource(R.drawable.sort_button_top_home2);
+
+                    petitdejButtonState = true;
+                }
+
+            };
+
+        });
 }}
