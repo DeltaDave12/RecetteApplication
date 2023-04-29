@@ -2,6 +2,7 @@ package com.example.recetteapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -22,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //recup par id
-        addref = findViewById(R.id.imageView);
-        settingsref = findViewById(R.id.imageView2);
+        addref = findViewById(R.id.add);
+        settingsref = findViewById(R.id.options);
         searchRef = findViewById(R.id.searchView);
         searchRef.clearFocus();
 
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         });
         settingsref.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "Settings Button", Toast.LENGTH_SHORT).show();
+            Intent goToOptions = new Intent(MainActivity.this, Options.class);
+            startActivity(goToOptions);
         };
     });
 
