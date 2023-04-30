@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".Options">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="PARAMETRES"
+        android:textColor="@color/rouge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/titre"
+        tools:layout_editor_absoluteX="0dp"
+        >
+
+        <Switch
+            android:id="@+id/switchdarkmode"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="30dp"
+            android:checked="false"
+            android:showText="false"
+            android:splitTrack="false"
+            android:text="Dark Mode"
+            android:textColor="@color/rouge"
+            android:theme="@style/ThemeOverlay.SwitchOptions"
+            android:thumbTint="#03A9F4"
+            android:trackTint="#2196F3"
+            tools:checked="false"
+            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+        </Switch>
+
+        <Switch
+            android:id="@+id/switchbigtext"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Make text bigger"
+            android:textColor="@color/rouge"
+            android:theme="@style/ThemeOverlay.SwitchOptions"
+            android:thumbTint="#2196F3"
+            android:trackTint="#2196F3"
+            tools:ignore="UseSwitchCompatOrMaterialXml"></Switch>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Remove personnal recipes"
+            android:id="@+id/button7"
+            android:background="@color/rouge"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
