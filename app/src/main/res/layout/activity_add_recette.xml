@@ -63,15 +63,34 @@
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
                     android:hint="Descritpion" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:text="Ajouter la recette !"
+                        android:id="@+id/button7"
+                        android:background="@color/saumon"
+                        />
 
-                <Button
-                    android:layout_width="200dp"
-                    android:layout_height="50dp"
-                    android:text="Ajouter la recette !"
-                    android:id="@+id/button7"
-                    android:background="@color/saumon"
-                    />
+                    <TextView
+                        android:id="@+id/textViewSelectType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:drawable/editbox_background"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:drawablePadding="16dp"
+                        android:hint="Select Type"
+                        android:padding="12dp" />
+                </LinearLayout>
+
             </com.google.android.material.textfield.TextInputLayout>
+
 
         </LinearLayout>
 
