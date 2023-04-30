@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/sort_button_top_home"
-                    android:textColor="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
                     android:text="Petit-déj" />
 
                 <Button
@@ -75,7 +75,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:background="#0058b6"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
                     android:text="Entrées" />
 
                 <Button
@@ -83,7 +84,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:background="#358a32"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
                     android:text="Plats" />
 
                 <Button
@@ -91,7 +93,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:background="#0058b6"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
                     android:text="Aperos" />
 
                 <Button
@@ -99,7 +102,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:background="#358a32"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
                     android:text="Boissons" />
 
                 <Button
@@ -107,7 +111,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:background="#0058b6"
+                    android:background="@drawable/sort_button_top_home"
+                    android:textColor="@color/rouge"
                     android:text="Desserts" />
 
             </LinearLayout>

@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
         searchRef.clearFocus();
         petitdejButton = findViewById(R.id.petitdej);
         entreesButton = findViewById(R.id.entrees);
-        platsButton = findViewById(R.id.petitdej);
-        aperosButton = findViewById(R.id.petitdej);
-        boissonsButton = findViewById(R.id.petitdej);
-        dessertsButton = findViewById(R.id.petitdej);
+        platsButton = findViewById(R.id.plats);
+        aperosButton = findViewById(R.id.aperos);
+        boissonsButton = findViewById(R.id.boissons);
+        dessertsButton = findViewById(R.id.desserts);
 
 
 
@@ -82,6 +82,86 @@ public class MainActivity extends AppCompatActivity {
                     petitdejButton.setBackgroundResource(R.drawable.sort_button_top_home2);
 
                     petitdejButtonState = true;
+                }
+
+            };
+
+        });
+        entreesButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                if(entreesButtonState == true){
+                    entreesButton.setBackgroundResource(R.drawable.sort_button_top_home);
+
+                    entreesButtonState = false;
+                } else {
+                    entreesButton.setBackgroundResource(R.drawable.sort_button_top_home2);
+
+                    entreesButtonState = true;
+                }
+
+            };
+
+        });
+        platsButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                if(platsButtonState == true){
+                    platsButton.setBackgroundResource(R.drawable.sort_button_top_home);
+
+                    platsButtonState = false;
+                } else {
+                    platsButton.setBackgroundResource(R.drawable.sort_button_top_home2);
+
+                    platsButtonState = true;
+                }
+
+            };
+
+        });
+        aperosButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                if(aperosButtonState == true){
+                    aperosButton.setBackgroundResource(R.drawable.sort_button_top_home);
+
+                    aperosButtonState = false;
+                } else {
+                    aperosButton.setBackgroundResource(R.drawable.sort_button_top_home2);
+
+                    aperosButtonState = true;
+                }
+
+            };
+
+        });
+        boissonsButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                if(boissonsButtonState == true){
+                    boissonsButton.setBackgroundResource(R.drawable.sort_button_top_home);
+
+                    boissonsButtonState = false;
+                } else {
+                    boissonsButton.setBackgroundResource(R.drawable.sort_button_top_home2);
+
+                    boissonsButtonState = true;
+                }
+
+            };
+
+        });
+        dessertsButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                if(dessertsButtonState == true){
+                    dessertsButton.setBackgroundResource(R.drawable.sort_button_top_home);
+
+                    dessertsButtonState = false;
+                } else {
+                    dessertsButton.setBackgroundResource(R.drawable.sort_button_top_home2);
+
+                    dessertsButtonState = true;
                 }
 
             };

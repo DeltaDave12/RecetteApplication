@@ -13,4 +13,8 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="ThemeOverlay.SwitchOptions" parent="">
+        <item name="android:colorControlActivated">@color/saumon</item>
+        <item name="android:colorForeground">@color/black</item>
+    </style>
 </resources>
