@@ -67,8 +67,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/sort_button_top_home"
-                    android:textColor="@color/rouge"
-                    android:text="Petit-déj" />
+                    android:fontFamily="@font/morning"
+                    android:text="Petit-dej"
+                    android:textColor="@color/rouge" />
 
                 <Button
                     android:id="@+id/entrees"
@@ -76,8 +77,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/sort_button_top_home"
-                    android:textColor="@color/rouge"
-                    android:text="Entrées" />
+                    android:text="Entrées"
+                    android:textColor="@color/rouge" />
 
                 <Button
                     android:id="@+id/plats"

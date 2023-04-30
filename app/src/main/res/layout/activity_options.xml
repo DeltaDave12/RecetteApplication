@@ -39,8 +39,6 @@
             android:text="Dark Mode"
             android:textColor="@color/rouge"
             android:theme="@style/ThemeOverlay.SwitchOptions"
-            android:thumbTint="#03A9F4"
-            android:trackTint="#2196F3"
             tools:checked="false"
             tools:ignore="UseSwitchCompatOrMaterialXml">
 
@@ -54,9 +52,15 @@
             android:text="Make text bigger"
             android:textColor="@color/rouge"
             android:theme="@style/ThemeOverlay.SwitchOptions"
-            android:thumbTint="#2196F3"
-            android:trackTint="#2196F3"
             tools:ignore="UseSwitchCompatOrMaterialXml"></Switch>
+
+        <Spinner
+            android:id="@+id/spinnerLangues"
+            android:layout_width="200dp"
+            android:layout_marginBottom="30dp"
+            android:spinnerMode="dropdown"
+            android:layout_height="20dp"
+            />
 
         <Button
             android:layout_width="200dp"

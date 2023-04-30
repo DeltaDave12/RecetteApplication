@@ -77,16 +77,14 @@
                         android:background="@color/saumon"
                         />
 
-                    <TextView
-                        android:id="@+id/textViewSelectType"
+                    <Spinner
+                        android:id="@+id/spinnerType"
                         android:layout_width="match_parent"
+                        android:spinnerMode="dropdown"
                         android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:background="@android:drawable/editbox_background"
-                        android:drawableRight="@android:drawable/arrow_down_float"
-                        android:drawablePadding="16dp"
-                        android:hint="Select Type"
-                        android:padding="12dp" />
+                        android:layout_weight="1" />
+
+
                 </LinearLayout>
 
             </com.google.android.material.textfield.TextInputLayout>
