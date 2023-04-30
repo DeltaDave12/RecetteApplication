@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
         //onclick buttons
         addref.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Add Button", Toast.LENGTH_SHORT).show();
+                Intent goToAddRecette = new Intent(MainActivity.this, AddRecette.class);
+                startActivity(goToAddRecette);
             };
         });
         settingsref.setOnClickListener(new View.OnClickListener() {

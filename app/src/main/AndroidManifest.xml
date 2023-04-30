@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".AddRecette"
+            android:exported="false" />
+        <activity
             android:name=".Options"
             android:exported="false" />
         <activity

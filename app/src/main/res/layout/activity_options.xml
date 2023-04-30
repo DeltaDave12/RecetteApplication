@@ -25,17 +25,46 @@
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/titre"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        >
 
         <Switch
             android:id="@+id/switchdarkmode"
             android:layout_width="200dp"
             android:layout_height="20dp"
+            android:layout_marginBottom="30dp"
+            android:checked="false"
+            android:showText="false"
+            android:splitTrack="false"
+            android:text="Dark Mode"
             android:textColor="@color/rouge"
             android:theme="@style/ThemeOverlay.SwitchOptions"
-            android:text="Dark Mode">
+            android:thumbTint="#03A9F4"
+            android:trackTint="#2196F3"
+            tools:checked="false"
+            tools:ignore="UseSwitchCompatOrMaterialXml">
 
         </Switch>
+
+        <Switch
+            android:id="@+id/switchbigtext"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Make text bigger"
+            android:textColor="@color/rouge"
+            android:theme="@style/ThemeOverlay.SwitchOptions"
+            android:thumbTint="#2196F3"
+            android:trackTint="#2196F3"
+            tools:ignore="UseSwitchCompatOrMaterialXml"></Switch>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Remove personnal recipes"
+            android:id="@+id/button7"
+            android:background="@color/rouge"
+            />
 
 
     </LinearLayout>
