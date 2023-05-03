@@ -68,7 +68,7 @@
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/sort_button_top_home"
                     android:fontFamily="@font/morning"
-                    android:text="Petit-dej"
+                    android:text="@string/petit_dejBoutonText"
                     android:textColor="@color/rouge" />
 
                 <Button
@@ -77,7 +77,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/sort_button_top_home"
-                    android:text="Entrées"
+                    android:text="@string/entreesBoutonText"
                     android:textColor="@color/rouge" />
 
                 <Button
@@ -87,7 +87,7 @@
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/sort_button_top_home"
                     android:textColor="@color/rouge"
-                    android:text="Plats" />
+                    android:text="@string/platsBoutonText" />
 
                 <Button
                     android:id="@+id/aperos"
@@ -96,7 +96,7 @@
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/sort_button_top_home"
                     android:textColor="@color/rouge"
-                    android:text="Aperos" />
+                    android:text="@string/aperosBoutonText" />
 
                 <Button
                     android:id="@+id/boissons"
@@ -105,7 +105,7 @@
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/sort_button_top_home"
                     android:textColor="@color/rouge"
-                    android:text="Boissons" />
+                    android:text="@string/boissonsBoutonText" />
 
                 <Button
                     android:id="@+id/desserts"
@@ -114,7 +114,7 @@
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/sort_button_top_home"
                     android:textColor="@color/rouge"
-                    android:text="Desserts" />
+                    android:text="@string/dessertsBoutonText" />
 
             </LinearLayout>
         </HorizontalScrollView>

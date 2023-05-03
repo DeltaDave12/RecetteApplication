@@ -11,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.Button;
 
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     boolean boissonsButtonState = false;
     boolean dessertsButtonState = false;
 
+    Spinner spinner;
+
 
 
     @Override
@@ -51,9 +54,6 @@ public class MainActivity extends AppCompatActivity {
         aperosButton = findViewById(R.id.aperos);
         boissonsButton = findViewById(R.id.boissons);
         dessertsButton = findViewById(R.id.desserts);
-
-
-
 
 
         //onclick buttons
